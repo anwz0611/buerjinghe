@@ -29,7 +29,7 @@
             android:textColor="#757575"
             android:textSize="14sp"/>
 
-        <com.jaydenxiao.androidfire.view.ShapeLoadingView
+        <com.zyinfo.brj.view.ShapeLoadingView
             android:id="@+id/shapeLoadingView"
             android:layout_width="24dp"
             android:layout_height="24dp"

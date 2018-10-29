@@ -7,7 +7,7 @@
 
     <!-- actionBar的引用 -->
 
-    <com.jaydenxiao.common.commonwidget.NormalTitleBar
+    <com.zyinfo.common.commonwidget.NormalTitleBar
         android:id="@+id/ntb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -103,7 +103,7 @@
         </RelativeLayout>
     </LinearLayout>
 
-    <com.jaydenxiao.androidfire.view.ProgressWebView
+    <com.zyinfo.brj.view.ProgressWebView
         android:id="@+id/webview"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -112,7 +112,7 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp" />
 
-    <com.jaydenxiao.androidfire.view.ProgressWebView
+    <com.zyinfo.brj.view.ProgressWebView
         android:id="@+id/webview1"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"

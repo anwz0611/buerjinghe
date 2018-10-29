@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical" >
-    <com.jaydenxiao.androidfire.view.CommonRadioGroup
+    <com.zyinfo.brj.view.CommonRadioGroup
         android:id="@+id/radioGroup" 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -51,6 +51,6 @@
             android:layout_height="wrap_content" 
             android:layout_weight="1"  
             style="@style/RadioButtonStyles" />    
-    </com.jaydenxiao.androidfire.view.CommonRadioGroup >
+    </com.zyinfo.brj.view.CommonRadioGroup>
 
 </LinearLayout>

@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <com.jaydenxiao.common.commonwidget.NormalTitleBar
+        <com.zyinfo.common.commonwidget.NormalTitleBar
             android:id="@+id/ntb"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -30,7 +30,7 @@
             app:refreshEnabled="true"
             app:refreshHeaderLayout="@layout/layout_irecyclerview_refresh_header" />
 
-        <com.jaydenxiao.common.commonwidget.LoadingTip
+        <com.zyinfo.common.commonwidget.LoadingTip
             android:id="@+id/loadedTip"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -46,5 +46,5 @@
         android:layout_margin="@dimen/fab_margin"
         android:src="@drawable/ic_arrow_upward"
         app:backgroundTint="@color/main_color"
-        app:layout_behavior="com.jaydenxiao.androidfire.widget.ScrollAwareFABBehavior" />
+        app:layout_behavior="com.zyinfo.brj.widget.ScrollAwareFABBehavior" />
 </android.support.design.widget.CoordinatorLayout>

@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.jaydenxiao.androidfire">
+    package="com.zyinfo.brj">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.CALL_PRIVILEGED"
@@ -42,7 +42,7 @@
 
 
     <application
-        android:name=".app.AppApplication"
+        android:name="com.zyinfo.brj.app.AppApplication"
         android:allowBackup="true"
         android:icon="@mipmap/nongyeshuili2"
         android:label="@string/app_name"
@@ -55,7 +55,7 @@
         <service android:name="com.amap.api.location.APSService" />
 
         <activity
-            android:name=".ui.main.activity.SplashActivity"
+            android:name="com.zyinfo.brj.ui.main.activity.SplashActivity"
             android:theme="@style/AppTheme.Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -63,32 +63,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.news.activity.PhotosDetailActivity"
+        <activity android:name="com.zyinfo.brj.ui.news.activity.PhotosDetailActivity"
             android:theme="@style/BaseAppTheme.Trans"
             />
-        <activity android:name=".ui.main.activity.MainActivity"/>
-        <activity android:name=".ui.news.activity.NewsDetailActivity"/>
-        <activity android:name=".ui.news.activity.NewsBrowserActivity"/>
-        <activity android:name=".ui.news.activity.NewsPhotoDetailActivity"/>
-        <activity android:name=".ui.news.activity.NewsChannelActivity"/>
-        <activity android:name=".ui.zone.activity.CircleZoneActivity"/>
-        <activity android:name=".ui.zone.activity.CirclePublishActivity"/>
-        <activity android:name=".ui.news.activity.AboutActivity"/>
-        <activity android:name=".ui.news.activity.WSDActivity" />
-        <activity android:name=".ui.bases.activity.AssociationInfoActivity" />
-        <activity android:name=".ui.more.activity.CompanyCityFragment" />
-        <activity android:name=".ui.more.activity.PhoneListActivity" />
-        <activity android:name=".ui.more.activity.CompanyStationFragment" />
-        <activity android:name=".ui.more.activity.EditoeSmsActivity" />
-        <activity android:name=".ui.more.activity.PolicyLawInfoActivity" />
-        <activity android:name=".ui.main.activity.LoginActivity" />
-        <activity android:name=".ui.more.activity.SecondTextDetails" />
-        <activity android:name=".ui.more.activity.FristTextDetails" />
-        <activity android:name=".ui.more.activity.MeteorologicalActivity" />
-        <activity android:name=".ui.bases.activity.WaterChannelActivity" />
-        <activity android:name=".ui.map.activity.IPQCActivity" />
-        <activity android:name=".ui.main.activity.LocationMapActivity" />
-        <activity android:name=".ui.more.activity.PanoramagramActivity" />
+        <activity android:name="com.zyinfo.brj.ui.main.activity.MainActivity"/>
+        <activity android:name="com.zyinfo.brj.ui.news.activity.NewsDetailActivity"/>
+        <activity android:name="com.zyinfo.brj.ui.news.activity.NewsBrowserActivity"/>
+        <activity android:name="com.zyinfo.brj.ui.news.activity.NewsPhotoDetailActivity"/>
+        <activity android:name="com.zyinfo.brj.ui.news.activity.NewsChannelActivity"/>
+        <activity android:name="com.zyinfo.brj.ui.zone.activity.CircleZoneActivity"/>
+        <activity android:name="com.zyinfo.brj.ui.zone.activity.CirclePublishActivity"/>
+        <activity android:name="com.zyinfo.brj.ui.news.activity.AboutActivity"/>
+        <activity android:name="com.zyinfo.brj.ui.news.activity.WSDActivity" />
+        <activity android:name="com.zyinfo.brj.ui.bases.activity.AssociationInfoActivity" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.CompanyCityFragment" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.PhoneListActivity" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.CompanyStationFragment" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.EditoeSmsActivity" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.PolicyLawInfoActivity" />
+        <activity android:name="com.zyinfo.brj.ui.main.activity.LoginActivity" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.SecondTextDetails" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.FristTextDetails" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.MeteorologicalActivity" />
+        <activity android:name="com.zyinfo.brj.ui.bases.activity.WaterChannelActivity" />
+        <activity android:name="com.zyinfo.brj.ui.map.activity.IPQCActivity" />
+        <activity android:name="com.zyinfo.brj.ui.main.activity.LocationMapActivity" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.PanoramagramActivity" />
         <!-- 友盟统计 -->
         <meta-data
             android:name="UMENG_APPKEY"

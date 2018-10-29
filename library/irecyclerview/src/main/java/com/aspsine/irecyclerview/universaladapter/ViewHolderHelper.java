@@ -20,7 +20,7 @@ import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.jaydenxiao.common.commonutils.ImageLoaderUtils;
+import com.zyinfo.common.commonutils.ImageLoaderUtils;
 
 import java.io.File;
 

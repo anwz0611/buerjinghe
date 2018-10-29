@@ -63,7 +63,7 @@
             app:loadMoreEnabled="true"
             app:refreshEnabled="true"
             app:refreshHeaderLayout="@layout/layout_irecyclerview_refresh_header" />
-        <com.jaydenxiao.common.commonwidget.LoadingTip
+        <com.zyinfo.common.commonwidget.LoadingTip
             android:id="@+id/loadedTip"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

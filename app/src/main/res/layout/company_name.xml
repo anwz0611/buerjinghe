@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:paddingTop="5dp" >
 
-    <com.jaydenxiao.androidfire.view.ClearEditText
+    <com.zyinfo.brj.view.ClearEditText
         android:id="@+id/filter_edit"
         android:layout_width="fill_parent"
         android:layout_height="35dp"
@@ -48,7 +48,7 @@
             android:textSize="30dp"
             android:visibility="invisible"/>
 
-        <com.jaydenxiao.androidfire.view.SideBar
+        <com.zyinfo.brj.view.SideBar
             android:id="@+id/sidrbar"
             android:layout_width="30dp"
             android:layout_height="fill_parent"
