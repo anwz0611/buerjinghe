@@ -52,8 +52,8 @@ public class LuiceInfoFragment extends BaseFragment<LuiceInfoPresenter, LuiceInf
     LoadingTip loadedTip;
     @Bind(R.id.ntb)
     NormalTitleBar ntb;
-    @Bind(R.id.fab)
-    FloatingActionButton fab;
+//    @Bind(R.id.fab)
+//    FloatingActionButton fab;
 
     private int mStartPage = 1;
     private String pageNum = "10";
@@ -72,12 +72,12 @@ public class LuiceInfoFragment extends BaseFragment<LuiceInfoPresenter, LuiceInf
         irc.setLayoutManager(new LinearLayoutManager(getContext()));
 
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                irc.smoothScrollToPosition(0);
-            }
-        });
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                irc.smoothScrollToPosition(0);
+//            }
+//        });
         WSListAdapter = new CommonRecycleViewAdapter<sluiceInfoBean>(getContext(), R.layout.luiceinfo_list_item) {
 
             @Override

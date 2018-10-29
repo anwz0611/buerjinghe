@@ -52,9 +52,8 @@ public class WaterChannelFragment extends BaseFragment<WaterChannelPresenter, Wa
     LoadingTip loadedTip;
     @Bind(R.id.ntb)
     NormalTitleBar ntb;
-    @Bind(R.id.fab)
-
-    FloatingActionButton fab;
+//    @Bind(R.id.fab)
+//    FloatingActionButton fab;
     private ListView countylist;
     private int mStartPage = 1;
     private String pageNum = "10";
@@ -72,12 +71,12 @@ public class WaterChannelFragment extends BaseFragment<WaterChannelPresenter, Wa
 //        ntb.setTitleText(getString(R.string.xiehui));
         ntb.setVisibility(View.GONE);
         irc.setLayoutManager(new LinearLayoutManager(getContext()));
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                irc.smoothScrollToPosition(0);
-            }
-        });
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                irc.smoothScrollToPosition(0);
+//            }
+//        });
         popupWindow_view = getLayoutInflater().inflate(R.layout.contrycity_right, null, false);
         WSListAdapter = new CommonRecycleViewAdapter<waterChannelBeans>(getContext(), R.layout.water_list_item) {
 

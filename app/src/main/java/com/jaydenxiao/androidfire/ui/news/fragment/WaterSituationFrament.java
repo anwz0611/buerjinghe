@@ -40,6 +40,7 @@ import com.jaydenxiao.androidfire.ui.news.presenter.WaterSituationPresenter;
 import com.jaydenxiao.androidfire.widget.DateChooseWheelViewDialog;
 import com.jaydenxiao.common.base.BaseFragment;
 import com.jaydenxiao.common.commonutils.LogUtils;
+import com.jaydenxiao.common.commonutils.TimeUtil;
 import com.jaydenxiao.common.commonwidget.LoadingTip;
 import com.yyydjk.library.DropDownMenu;
 
@@ -157,7 +158,7 @@ public class WaterSituationFrament extends BaseFragment<WaterSituationPresenter,
                 helper.setText(R.id.river_cezhanname, waterSituation.getStName() + "(" + waterSituation.getStcd() + ")");
                 helper.setText(R.id.river_shuiwei, waterSituation.getStage());
                 helper.setText(R.id.river_liul, waterSituation.getFlow());
-                helper.setText(R.id.river_data, waterSituation.getTm());
+                helper.setText(R.id.river_data, TimeUtil.formatDate1(waterSituation.getTm()));
 
                 if (waterSituation.getWptn() == null || waterSituation.getWptn().equals("")) {
                     s = "5";
@@ -305,7 +306,7 @@ public class WaterSituationFrament extends BaseFragment<WaterSituationPresenter,
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 ageAdapter.setCheckItem(position);
-                mDropDownMenu.setTabText(position == 0 ? headers[1] : ages[position]);
+                mDropDownMenu.setTabText(position == 0 ? headers[0] : ages[position]);
 
                 switch (ages[position]) {
                     case "不限":

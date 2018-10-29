@@ -47,8 +47,8 @@ public class WaterChannelActivity extends BaseActivity<WaterChannelPresenter, Wa
     NormalTitleBar ntb;
 
     String id1;
-    @Bind(R.id.fab)
-    FloatingActionButton fab;
+//    @Bind(R.id.fab)
+//    FloatingActionButton fab;
     private int mStartPage = 1;
     private String pageNum = "10";
     private CommonRecycleViewAdapter<waterChannelBeans> WSListAdapter;
@@ -64,12 +64,12 @@ public class WaterChannelActivity extends BaseActivity<WaterChannelPresenter, Wa
         id1 = getIntent().getStringExtra(AppConstant.ID);
         ntb.setTitleText(getIntent().getStringExtra(AppConstant.NAME)+"");
         irc.setLayoutManager(new LinearLayoutManager(mContext));
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                irc.smoothScrollToPosition(0);
-            }
-        });
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                irc.smoothScrollToPosition(0);
+//            }
+//        });
         WSListAdapter = new CommonRecycleViewAdapter<waterChannelBeans>(mContext, R.layout.waterchannel_list_item) {
 
             @Override
@@ -166,10 +166,10 @@ public class WaterChannelActivity extends BaseActivity<WaterChannelPresenter, Wa
 
     @Override
     public void onLoadMore(View loadMoreView) {
-        WSListAdapter.getPageBean().setRefresh(false);
-        //发起请求0000
-        irc.setLoadMoreStatus(LoadMoreFooterView.Status.LOADING);
-        mPresenter.getWaterChannelDetailDataRequest(id1 + "", "5");
+        WSListAdapter.getPageBean().setRefresh(true);
+//        //发起请求0000
+//        irc.setLoadMoreStatus(LoadMoreFooterView.Status.LOADING);
+//        mPresenter.getWaterChannelDetailDataRequest(id1 + "", "5");
 
     }
 

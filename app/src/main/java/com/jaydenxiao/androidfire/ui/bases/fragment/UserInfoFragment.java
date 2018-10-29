@@ -53,8 +53,8 @@ public class UserInfoFragment extends BaseFragment<UserInfoPresenter, UserInfoMo
     LoadingTip loadedTip;
     @Bind(R.id.ntb)
     NormalTitleBar ntb;
-    @Bind(R.id.fab)
-    FloatingActionButton fab;
+//    @Bind(R.id.fab)
+//    FloatingActionButton fab;
 
     private int mStartPage = 1;
     private String pageNum = "10";
@@ -73,12 +73,12 @@ public class UserInfoFragment extends BaseFragment<UserInfoPresenter, UserInfoMo
             EventBus.getDefault().register(this);
         }
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                irc.smoothScrollToPosition(0);
-            }
-        });
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                irc.smoothScrollToPosition(0);
+//            }
+//        });
         WSListAdapter = new CommonRecycleViewAdapter<userInfoBeans>(getContext(), R.layout.userinfo_list_item) {
 
             @Override

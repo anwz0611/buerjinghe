@@ -51,9 +51,9 @@ public class AssociationInfoFragment extends BaseFragment<AssociationInfoPresent
     LoadingTip loadedTip;
     @Bind(R.id.ntb)
     NormalTitleBar ntb;
-    @Bind(R.id.fab)
-
-    FloatingActionButton fab;
+//    @Bind(R.id.fab)
+//
+//    FloatingActionButton fab;
     private int mStartPage = 1;
     private String pageNum = "10";
     private CommonRecycleViewAdapter<AssociationInfoBeans> WSListAdapter;
@@ -72,12 +72,12 @@ public class AssociationInfoFragment extends BaseFragment<AssociationInfoPresent
         {
             EventBus.getDefault().register(this);
         }
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                irc.smoothScrollToPosition(0);
-            }
-        });
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                irc.smoothScrollToPosition(0);
+//            }
+//        });
         WSListAdapter = new CommonRecycleViewAdapter<AssociationInfoBeans>(getContext(), R.layout.assinfo_list_item) {
 
             @Override

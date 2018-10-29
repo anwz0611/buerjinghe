@@ -62,8 +62,8 @@ public class StationInfoFragment extends BaseFragment<StationInfoPresenter, Stat
     @Bind(R.id.sta_loadedTip)
     LoadingTip loadedTip;
 
-    @Bind(R.id.sta_fab)
-    FloatingActionButton fab;
+//    @Bind(R.id.sta_fab)
+//    FloatingActionButton fab;
 
     private ColorStateList white;
     private ColorStateList black;
@@ -96,12 +96,12 @@ public class StationInfoFragment extends BaseFragment<StationInfoPresenter, Stat
             EventBus.getDefault().register(this);
         }
         irc.setLayoutManager(new LinearLayoutManager(getContext()));
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                irc.smoothScrollToPosition(0);
-            }
-        });
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                irc.smoothScrollToPosition(0);
+//            }
+//        });
         WSListAdapter = new CommonRecycleViewAdapter<stationInfoBeans>(getContext(), R.layout.stationinfo_list_item) {
 
             @Override

@@ -3,6 +3,7 @@ package com.jaydenxiao.androidfire.ui.map.activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.util.Log;
 import android.view.View;
@@ -26,6 +27,8 @@ import com.jaydenxiao.androidfire.ui.map.presenter.IPQCPresenter;
 import com.jaydenxiao.androidfire.ui.news.activity.WSDActivity;
 import com.jaydenxiao.androidfire.widget.DateChooseWheelViewDialog;
 import com.jaydenxiao.common.base.BaseActivity;
+import com.jaydenxiao.common.commonutils.TimeUtil;
+import com.jaydenxiao.common.commonutils.ToastUitl;
 import com.jaydenxiao.common.commonwidget.LoadingTip;
 import com.jaydenxiao.common.commonwidget.NormalTitleBar;
 
@@ -96,10 +99,20 @@ public class IPQCActivity extends BaseActivity<IPQCPresenter, IPQCModel> impleme
             @Override
             public void convert(ViewHolderHelper helper, IPQCbeans IPQCbeans) {
                 helper.setText(R.id.river_city, IPQCbeans.getCan());
-                helper.setText(R.id.river_cezhanname, IPQCbeans.getTm());
+                helper.setText(R.id.river_cezhanname, TimeUtil.formatDate1(IPQCbeans.getTm()));
                 helper.setText(R.id.river_shuiwei, IPQCbeans.getLabel() + "");
                 helper.setText(R.id.river_liul, IPQCbeans.getGrade() + "");
                 helper.setText(R.id.river_data, IPQCbeans.getPart() + "");
+
+                CardView cv = helper.getView(R.id.wsf_cd);
+                cv.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        ToastUitl.showShort("没有坐标信息");
+                    }
+                });
+
+
             }
         };
         WSListAdapter.openLoadAnimation(new ScaleInAnimation());
